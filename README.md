@@ -1,7 +1,7 @@
 # PyroLight
 Automated switch bot for switches using Kemet SS-430 Sensor 
 
-## Project Link:
+Project Link:
 [PyroLight](https://www.hackster.io/vishwasnavada/pyrolight-1d4a31)
 
 Here's the video Link:
