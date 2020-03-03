@@ -1195,28 +1195,6 @@ F 3 "~" H 13600 6300 50  0001 C CNN
 	1    13600 6300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Pyrolight-rescue:+5V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR020
-U 1 1 5E797430
-P 14050 5400
-F 0 "#PWR020" H 14050 5250 50  0001 C CNN
-F 1 "+5V" H 14050 5540 50  0000 C CNN
-F 2 "" H 14050 5400 60  0000 C CNN
-F 3 "" H 14050 5400 60  0000 C CNN
-	1    14050 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Pyrolight-rescue:+5V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR012
-U 1 1 5E7985B2
-P 14000 6050
-F 0 "#PWR012" H 14000 5900 50  0001 C CNN
-F 1 "+5V" H 14000 6190 50  0000 C CNN
-F 2 "" H 14000 6050 60  0000 C CNN
-F 3 "" H 14000 6050 60  0000 C CNN
-	1    14000 6050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13800 6300 14000 6300
 Wire Wire Line
@@ -1333,4 +1311,26 @@ Wire Wire Line
 	2300 7050 2300 6850
 Wire Wire Line
 	2300 6850 3950 6850
+$Comp
+L Pyrolight-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR?
+U 1 1 5E63869F
+P 14000 6050
+F 0 "#PWR?" H 14000 5900 50  0001 C CNN
+F 1 "+3.3V" H 14000 6200 50  0000 C CNN
+F 2 "" H 14000 6050 60  0000 C CNN
+F 3 "" H 14000 6050 60  0000 C CNN
+	1    14000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pyrolight-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR?
+U 1 1 5E63981D
+P 14050 5400
+F 0 "#PWR?" H 14050 5250 50  0001 C CNN
+F 1 "+3.3V" H 14050 5550 50  0000 C CNN
+F 2 "" H 14050 5400 60  0000 C CNN
+F 3 "" H 14050 5400 60  0000 C CNN
+	1    14050 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
