@@ -14,31 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Pyrolight-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR018
-U 1 1 580DBD62
-P 5850 8050
-F 0 "#PWR018" H 5850 7800 50  0001 C CNN
-F 1 "GND" H 5850 7900 50  0000 C CNN
-F 2 "" H 5850 8050 60  0000 C CNN
-F 3 "" H 5850 8050 60  0000 C CNN
-	1    5850 8050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Pyrolight-rescue:TESTPAD-OLIMEX_OTHER-ESP32-DevKit-Lipo_Rev_A1-rescue GND1
-U 1 1 580DBDA3
-P 5650 8050
-F 0 "GND1" H 5850 8050 50  0000 C CNN
-F 1 "TESTPAD" H 5550 7935 50  0001 L BNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5410 7975 20  0001 C CNN
-F 3 "" V 5650 8050 60  0000 C CNN
-F 4 "Value 1" H 5650 8050 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5650 8050 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5650 8050 60  0001 C CNN "Fieldname3"
-	1    5650 8050
-	-1   0    0    1   
-$EndComp
-$Comp
 L Pyrolight-rescue:PWR_FLAG-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #FLG02
 U 1 1 580DBEE4
 P 7750 3050
@@ -179,7 +154,7 @@ U 1 1 580E1FA3
 P 7250 4250
 F 0 "L1" H 7250 4449 50  0000 C CNN
 F 1 "2.2uH/1.5A/DCR<0.1R/CD32" H 7250 4366 35  0000 C CNN
-F 2 "Inductors_SMD:L_Coilcraft_XAL5030" H 7200 4250 60  0001 C CNN
+F 2 "Inductors_SMD:L_Abracon_ASPI-3012S" H 7200 4250 60  0001 C CNN
 F 3 "" H 7200 4250 60  0000 C CNN
 F 4 "Value 1" H 7250 4250 60  0001 C CNN "Fieldname 1"
 F 5 "Value2" H 7250 4250 60  0001 C CNN "Fieldname2"
@@ -637,13 +612,11 @@ U 1 1 58F77BD8
 P 7150 7950
 F 0 "U4" V 7097 8078 60  0000 L CNN
 F 1 "BAT54C(SOT23-3)" V 7200 8100 60  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 7150 7950 60  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7150 7950 60  0001 C CNN
 F 3 "" H 7150 7950 60  0001 C CNN
 	1    7150 7950
 	0    1    -1   0   
 $EndComp
-Text Label 6150 8250 0    60   ~ 0
-D_Com
 Wire Wire Line
 	2950 2950 2950 3150
 Wire Wire Line
@@ -812,8 +785,6 @@ Wire Notes Line
 Wire Notes Line
 	8350 8550 8350 5850
 Wire Wire Line
-	5750 8250 6850 8250
-Wire Wire Line
 	5250 6650 5250 7150
 Wire Wire Line
 	2650 3850 2650 4450
@@ -821,10 +792,6 @@ Wire Wire Line
 	2650 5050 2650 4750
 Wire Wire Line
 	6150 7750 6150 7950
-Wire Wire Line
-	6850 8250 6850 7950
-Wire Wire Line
-	6850 7950 6950 7950
 Wire Wire Line
 	7150 7650 7150 7750
 Wire Wire Line
@@ -955,8 +922,6 @@ F 6 "Value3" H 8050 4650 60  0001 C CNN "Fieldname3"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 8050 5850 8050
-Wire Wire Line
 	5650 3150 5650 3050
 Wire Wire Line
 	6150 4250 6150 4050
@@ -1024,24 +989,7 @@ Wire Wire Line
 Text Label 1550 4450 1    60   ~ 0
 +5V_USB
 Wire Wire Line
-	6650 7950 6850 7950
-Connection ~ 6850 7950
-Wire Wire Line
 	6150 7950 6350 7950
-$Comp
-L Pyrolight-rescue:TESTPAD-OLIMEX_OTHER-ESP32-DevKit-Lipo_Rev_A1-rescue D_Com1
-U 1 1 5D6D4498
-P 5650 8250
-F 0 "D_Com1" H 5900 8250 50  0000 C CNN
-F 1 "TESTPAD" H 5550 8135 50  0001 L BNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5410 8175 20  0001 C CNN
-F 3 "" V 5650 8250 60  0000 C CNN
-F 4 "Value 1" H 5650 8250 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5650 8250 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5650 8250 60  0001 C CNN "Fieldname3"
-	1    5650 8250
-	-1   0    0    1   
-$EndComp
 $Comp
 L Pyrolight-rescue:Crystal_GND-OLIMEX_Devices-ESP32-DevKit-Lipo_Rev_A1-rescue Q1
 U 1 1 5B4A02CE
@@ -1074,7 +1022,7 @@ U 1 1 5E6BCC6C
 P 10250 5850
 F 0 "J1" H 10278 5826 50  0000 L CNN
 F 1 "Conn_01x08_Female" H 10278 5735 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 10250 5850 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 10250 5850 50  0001 C CNN
 F 3 "~" H 10250 5850 50  0001 C CNN
 	1    10250 5850
 	1    0    0    -1  
@@ -1085,7 +1033,7 @@ U 1 1 5E6BD758
 P 12000 5850
 F 0 "J2" H 12028 5826 50  0000 L CNN
 F 1 "Conn_01x08_Female" H 12028 5735 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 12000 5850 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 12000 5850 50  0001 C CNN
 F 3 "~" H 12000 5850 50  0001 C CNN
 	1    12000 5850
 	1    0    0    -1  
@@ -1179,7 +1127,7 @@ U 1 1 5E7962C1
 P 13600 5700
 F 0 "J3" H 13708 5981 50  0000 C CNN
 F 1 "SS-430 Proximity sensor" V 13500 5850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 13600 5700 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 13600 5700 50  0001 C CNN
 F 3 "~" H 13600 5700 50  0001 C CNN
 	1    13600 5700
 	1    0    0    -1  
@@ -1190,7 +1138,7 @@ U 1 1 5E7966C7
 P 13600 6300
 F 0 "J4" H 13708 6581 50  0000 C CNN
 F 1 "Servo" V 13500 6300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 13600 6300 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 13600 6300 50  0001 C CNN
 F 3 "~" H 13600 6300 50  0001 C CNN
 	1    13600 6300
 	1    0    0    -1  
@@ -1312,10 +1260,10 @@ Wire Wire Line
 Wire Wire Line
 	2300 6850 3950 6850
 $Comp
-L Pyrolight-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR?
+L Pyrolight-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR012
 U 1 1 5E63869F
 P 14000 6050
-F 0 "#PWR?" H 14000 5900 50  0001 C CNN
+F 0 "#PWR012" H 14000 5900 50  0001 C CNN
 F 1 "+3.3V" H 14000 6200 50  0000 C CNN
 F 2 "" H 14000 6050 60  0000 C CNN
 F 3 "" H 14000 6050 60  0000 C CNN
@@ -1323,14 +1271,16 @@ F 3 "" H 14000 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Pyrolight-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR?
+L Pyrolight-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR018
 U 1 1 5E63981D
 P 14050 5400
-F 0 "#PWR?" H 14050 5250 50  0001 C CNN
+F 0 "#PWR018" H 14050 5250 50  0001 C CNN
 F 1 "+3.3V" H 14050 5550 50  0000 C CNN
 F 2 "" H 14050 5400 60  0000 C CNN
 F 3 "" H 14050 5400 60  0000 C CNN
 	1    14050 5400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6650 7950 6950 7950
 $EndSCHEMATC
