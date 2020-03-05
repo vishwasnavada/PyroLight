@@ -5,7 +5,7 @@ Project Link:
 [PyroLight](https://www.hackster.io/vishwasnavada/pyrolight-1d4a31)
 
 ##  Initial Protype image
-
+![image](image.JPG)
 ## Final PCB Version
 ### Frontside 
 ![front](/Hardware/front.jpg)
