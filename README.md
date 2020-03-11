@@ -18,3 +18,6 @@ Project Link:
 
 Here's the video Link:
 [![Watch the video](https://img.youtube.com/vi/70MHgPO923Y/0.jpg)](https://youtu.be/70MHgPO923Y)
+
+
+I referred schematics from olimex for the esp 32 charging circuit.
